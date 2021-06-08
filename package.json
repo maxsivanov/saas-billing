@@ -1,16 +1,22 @@
 {
-  "name": "saas-billing",
-  "version": "1.0.0",
+  "name": "saas-bill",
+  "private": false,
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "author": "",
+  "author": "Max S. Ivanov",
   "license": "ISC",
   "dependencies": {
     "eslint": "^7.28.0",
     "eslint-plugin-jest": "^24.3.6",
     "jest": "^27.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxsivanov/saas-billing"
+  },
+  "homepage": "https://github.com/maxsivanov/saas-billing"
 }

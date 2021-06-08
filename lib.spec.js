@@ -61,12 +61,12 @@ it('Payment Due', () => {
     expect(due).toBe("2020-02-01");
 });
 
-it('Payment Due (with creditSum)', () => {
+it('Payment Due (with creditLimit)', () => {
     const timeline = [
         {date: "2020-01-02"},
     ]
     const tariff = [
-        {date: "2020-01-02", price: 10000, days: 30.41, creditSum: 10000},
+        {date: "2020-01-02", price: 10000, days: 30.41, creditLimit: 10000},
     ];
     const payments = [
         {date: "2020-01-02", sum: 10000},

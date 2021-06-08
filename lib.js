@@ -53,10 +53,10 @@ function getPaymentDue(
             return sum;
         }
         const dayTariff = tariffRange[index];
-        const { price, days, creditSum } = dayTariff;
+        const { price, days, creditLimit } = dayTariff;
         if (rest <= 0) {
-            if (creditSum && !creditApplied) {
-                return [index, rest + creditSum - price / days, true];
+            if (creditLimit && !creditApplied) {
+                return [index, rest + creditLimit - price / days, true];
             }
             return [foundIndex, 0, creditApplied];
         }
